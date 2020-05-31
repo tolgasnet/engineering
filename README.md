@@ -1,6 +1,4 @@
-Personal notes for web/api engineering practices, patterns and tools. 
-
-**Table of Contents**
+## Table of Contents <!-- omit in toc -->
 
 - [1. Practices](#1-practices)
   - [XP](#xp)
