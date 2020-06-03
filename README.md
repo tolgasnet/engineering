@@ -18,7 +18,7 @@ Version 0.1.0
 - [3. Development](#3-development)
   - [React](#react)
   - [Node.js](#nodejs)
-    - [Javascript](#javascript)
+    - [Language](#language)
     - [Error handling / logging](#error-handling--logging)
     - [Config](#config)
     - [Repos and branching](#repos-and-branching)
@@ -61,18 +61,18 @@ Version 0.1.0
 
 ## Node.js
 
-### Javascript
+### Language
 * Use arrow functions.
 * Use async/await.
 * Use === operator.
 * Use camel case for variables, constants, functions and pascal case for classes.
 * Use ESlint with appropriate plugins.
-* Use only the built-in Error object or extend it. Don't extend it multiple times.
-* Handle/translate exceptions in wrappers for third party libraries, API's or databases.
-* Use top level error handlers to decide the appropriate action. Use lover level error handlers to add the additional context. Always use error libraries to standardize the error context.
 
 ### Error handling / logging
 * Document API error responses.
+* Use only the built-in Error object or extend it. Don't extend it multiple times.
+* Handle/translate exceptions in wrappers for third party libraries, API's or databases.
+* Use top level error handlers to decide the appropriate action. Use lover level error handlers to add the additional context. Always use error libraries to standardize the error context.
 * Fail fast and gracefully. Use graceful degradation for API responses. If a non-critical piece of data could not be retrieved, return fail the whole response unnecessarily. However, if you know the request should fail, don't defer the responsibility to another object by returning null or an error object. Throw/Fail immediately. 
 * Use either 500 or 200 for error responses. Advantage of using 500 is the api consumer can there is an error by checking status only. The advantage of using 200 for errors is you can then use 500s for other types of errors which are separate from business logic errors. There are examples of either usage patterns in big tech companies.
 * Never use *console.log* so you can query through logs, separate by log levels, add json objects, etc.
